@@ -1,0 +1,77 @@
+@import "../../styles/index.scss";
+
+header {
+    background-color: $bg-primary-colo;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        position: relative;
+
+        color: $text-primary-color;
+
+        padding: 10px;
+
+        #logo {
+            border-radius: 50%;
+
+            width: 60px;
+        }
+
+        #navMenu {
+            background: none;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        #navLinks {
+            background-color: $bg-primary-colo;
+
+            display: flex;
+            flex-direction: column;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: 0;
+            height: 100vh;
+            padding-top: 20px;
+
+            overflow: hidden;
+            transition: all 500ms ease;
+
+            &.nav-open {
+                width: 50% !important;
+            }
+
+            #closeNavMenu {
+                background: none;
+
+                align-self: flex-end;
+
+                padding-right: 10px;
+                margin-bottom: 18px;
+
+                img {
+                    width: 38px;
+                }
+            }
+
+            a {
+                border-bottom: 2px solid $bg-secondary-color;
+
+                color: $text-primary-color;
+                font-size: rem-calc(20);
+                text-decoration-line: none;
+                text-wrap: nowrap;
+
+                padding: 10px;
+            }
+        }
+    }
+}

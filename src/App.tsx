@@ -1,9 +1,12 @@
-import React from "react";
+import "./App.scss";
+import { Nav } from "./components/nav/Nav";
+import { Home } from "./pages/home/Home";
 
 export const App = () => {
   return (
     <>
-      <h1>Testando</h1>
+      <Nav></Nav>
+      <Home></Home>
     </>
   );
 };
