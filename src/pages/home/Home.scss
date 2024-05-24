@@ -1,1 +1,66 @@
 @import "../../styles/index.scss";
+
+#home {
+    #homeVideo {
+        video {
+            width: 100%;
+        }
+    }
+
+    .presentation-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        padding: 20px;
+
+        &:nth-of-type(3) {
+            background-color: $bg-primary-color;
+
+            .text {
+                color: $text-primary-color;
+            }
+
+            img {
+                border-radius: 0;
+                width: 90%;
+            }
+        }
+
+        &:last-child {
+            img {
+                width: 60%;
+            }
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            h1 {
+                font-family: Oswald;
+                font-size: rem-calc(24);
+                text-wrap: nowrap;
+                text-align: center;
+                text-transform: uppercase;
+                line-height: 30px;
+                letter-spacing: 2px;
+            }
+
+            p {
+                font-size: rem-calc(18);
+                font-weight: 400;
+                text-align: justify;
+            }
+        }
+
+        img {
+            border-radius: 15px;
+
+            width: 75%;
+            margin: auto;
+        }
+    }
+}
