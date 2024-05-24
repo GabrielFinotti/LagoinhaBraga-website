@@ -1,0 +1,13 @@
+<?xml version="1.0" ?><svg style="enable-background:new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	
+		.st2{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;}
+	
+		.st4{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#040404;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#040404;}
+	.st6{fill:none;}
+	.st7{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style><g id="Layer_1"/><g id="Layer_2"><g><path d="M95.529,27.322c-1.187-4.494-4.706-8.033-9.17-9.234c-6.049-1.631-26.025-1.927-34.336-1.979    c-1.909,0.042-1.914,2.858-0.009,2.908c6.394,0.04,27.71,0.293,33.589,1.879c3.464,0.932,6.188,3.679,7.115,7.168    c1.852,6.962,1.874,21.784,1.874,21.933c0,0.149-0.023,14.975-1.876,21.937c-0.926,3.487-3.652,6.232-7.114,7.163    C78.686,80.961,50.286,80.983,50,80.983s-28.686-0.022-35.602-1.887c-3.462-0.932-6.188-3.677-7.114-7.164    C5.43,64.971,5.408,50.145,5.408,49.996c0-0.149,0.022-14.975,1.876-21.937c0.926-3.487,3.652-6.232,7.115-7.163    c5.387-1.453,23.847-1.786,31.533-1.862c1.911-0.042,1.879-2.901-0.028-2.908c-9.686,0.096-26.757,0.478-32.261,1.962    c-4.464,1.201-7.978,4.736-9.169,9.225C2.522,34.64,2.5,49.373,2.5,49.996c0,0.623,0.022,15.356,1.973,22.683    c1.192,4.49,4.706,8.025,9.168,9.225c7.284,1.964,35.174,1.987,36.358,1.987c1.183,0,29.074-0.023,36.358-1.987    c4.463-1.2,7.977-4.735,9.168-9.224c1.951-7.328,1.974-22.061,1.974-22.684C97.5,49.373,97.477,34.653,95.529,27.322z"/><path d="M39.85,35.046c-0.448,0.26-0.723,0.739-0.723,1.257v27.386c-0.016,0.782,0.676,1.471,1.454,1.454    c0.248,0,0.496-0.063,0.719-0.19l24.069-13.692c0.964-0.51,0.97-2.017,0.001-2.528c0,0-24.07-13.694-24.07-13.694    C40.851,34.784,40.298,34.786,39.85,35.046z M42.035,38.803L61.71,49.996L42.035,61.188V38.803z"/></g></g></svg>
