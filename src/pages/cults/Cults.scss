@@ -66,3 +66,16 @@
         padding: 15px 20px;
     }
 }
+
+@media (min-width: 760px) {
+    #cults {
+        p {
+            &:first-of-type {
+                font-size: rem-calc(18);
+            }
+        }
+
+        a {
+        }
+    }
+}
