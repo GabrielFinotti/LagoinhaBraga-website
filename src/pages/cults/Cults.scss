@@ -1,0 +1,69 @@
+@import "../../styles/index.scss";
+
+#cults {
+    background-color: $bg-primary-color;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 20px;
+    min-height: calc(100vh - 172px);
+
+    h1 {
+        color: $text-primary-color;
+        font-size: rem-calc(34);
+        text-align: center;
+
+        &::after {
+            background: $bg-tertiary-color;
+
+            display: block;
+
+            height: 4px;
+
+            margin-top: 5px;
+
+            content: "";
+        }
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        color: $text-tertiary-color;
+        font-size: rem-calc(24);
+        text-align: center;
+
+        &:first-of-type {
+            color: $text-primary-color;
+            font-size: rem-calc(16);
+            text-align: center;
+
+            width: 365px;
+        }
+
+        span {
+            color: $text-primary-color;
+            font-size: rem-calc(16);
+        }
+    }
+
+    a {
+        background-color: $bg-secondary-color;
+        border: 2px solid $bg-tertiary-color;
+        border-radius: 50px;
+
+        color: $text-secondary-color;
+        font-size: rem-calc(20);
+        font-weight: 500;
+        text-decoration-line: none;
+        letter-spacing: 3px;
+
+        padding: 15px 20px;
+    }
+}
