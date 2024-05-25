@@ -1,0 +1,91 @@
+@import "../../styles/index.scss";
+
+#courses {
+    background-color: $bg-primary-color;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    padding: 20px;
+
+    h1 {
+        color: $text-primary-color;
+        font-size: rem-calc(34);
+        text-align: center;
+
+        &::after {
+            background: $bg-tertiary-color;
+
+            display: block;
+
+            height: 4px;
+
+            margin-top: 5px;
+
+            content: "";
+        }
+    }
+
+    #contentCourse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        img {
+            border-radius: 50%;
+
+            width: 70%;
+
+            object-fit: cover;
+            aspect-ratio: 1/1;
+        }
+
+        #contentText {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h2 {
+                color: $text-primary-color;
+                font-size: rem-calc(28);
+                font-weight: 500;
+                text-align: center;
+            }
+
+            p {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                color: $text-primary-color;
+                font-size: rem-calc(18);
+                font-weight: 300;
+                text-align: justify;
+
+                margin-bottom: 10px;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            a {
+                background-color: $bg-tertiary-color;
+                border-radius: 15px;
+
+                color: $text-secondary-color;
+                font-size: rem-calc(20);
+                font-weight: 500;
+                text-decoration-line: none;
+
+                width: max-content;
+                margin: auto;
+                padding: 15px 25px;
+            }
+        }
+    }
+}
