@@ -8,59 +8,150 @@
     }
 
     .presentation-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-        padding: 20px;
-
         &:nth-of-type(3) {
             background-color: $bg-primary-color;
 
-            .text {
-                color: $text-primary-color;
-            }
+            .container {
+                .text {
+                    color: $text-primary-color;
+                }
 
-            img {
-                border-radius: 0;
-                width: 90%;
+                img {
+                    border-radius: 0px;
+                    width: 90%;
+                }
             }
         }
 
         &:last-child {
-            img {
-                width: 60%;
+            .container {
+                img {
+                    width: 60%;
+                }
             }
         }
 
-        .text {
+        .container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            align-items: center;
+            gap: 20px;
 
-            h1 {
-                font-family: Oswald;
-                font-size: rem-calc(24);
-                text-wrap: nowrap;
-                text-align: center;
-                text-transform: uppercase;
-                line-height: 30px;
-                letter-spacing: 2px;
+            padding: 20px;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                h1 {
+                    font-family: Oswald;
+                    font-size: rem-calc(24);
+                    text-wrap: nowrap;
+                    text-align: center;
+                    text-transform: uppercase;
+                    line-height: 30px;
+                    letter-spacing: 2px;
+                }
+
+                p {
+                    font-size: rem-calc(18);
+                    font-weight: 400;
+                    text-align: justify;
+                }
             }
 
-            p {
-                font-size: rem-calc(18);
-                font-weight: 400;
-                text-align: justify;
+            img {
+                border-radius: 15px;
+
+                width: 75%;
             }
         }
+    }
+}
 
-        img {
-            border-radius: 15px;
+@media (min-width: 760px) {
+    #home {
+        .presentation-cards {
+            &:nth-of-type(3) {
+                .container {
+                    flex-direction: row-reverse;
 
-            width: 75%;
-            margin: auto;
+                    img {
+                        width: 52%;
+                    }
+                }
+            }
+
+            &:last-child {
+                .container {
+                    img {
+                        width: 30%;
+                    }
+                }
+            }
+
+            .container {
+                flex-direction: row;
+                justify-content: space-around;
+                gap: 0;
+
+                .text {
+                    max-width: 430px;
+
+                    h1 {
+                        font-size: rem-calc(30);
+                    }
+
+                    p {
+                        font-size: rem-calc(20);
+                    }
+                }
+
+                img {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #home {
+        .presentation-cards {
+            &:nth-of-type(3) {
+                .container {
+                    img {
+                        width: 44%;
+                    }
+                }
+            }
+
+            &:last-child {
+                .container {
+                    img {
+                        width: 25%;
+                    }
+                }
+            }
+
+            .container {
+                gap: 20px;
+
+                .text {
+                    h1 {
+                        font-size: rem-calc(34);
+                    }
+
+                    p {
+                        font-size: rem-calc(22);
+                    }
+                }
+
+                img {
+                    width: 35%;
+                }
+            }
         }
     }
 }
