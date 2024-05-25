@@ -76,3 +76,23 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    #cults {
+        h1 {
+            font-size: rem-calc(38);
+        }
+
+        p {
+            font-size: rem-calc(26);
+
+            &:first-of-type {
+                font-size: rem-calc(20);
+            }
+        }
+
+        a {
+            font-size: rem-calc(22);
+        }
+    }
+}
