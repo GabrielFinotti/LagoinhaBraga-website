@@ -1,0 +1,85 @@
+@import "../../styles/index.scss";
+
+#tithes {
+    background-color: $bg-primary-color;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    color: $text-primary-color;
+
+    padding: 20px;
+
+    #headerTithes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        h1 {
+            color: $text-primary-color;
+            font-size: rem-calc(34);
+            text-align: center;
+
+            &::after {
+                background: $bg-tertiary-color;
+
+                display: block;
+
+                height: 4px;
+
+                margin-top: 5px;
+
+                content: "";
+            }
+        }
+
+        p {
+            font-size: rem-calc(18);
+            text-align: center;
+        }
+    }
+
+    #payment {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            margin-bottom: 10px;
+
+            &:first-of-type {
+                gap: 20px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 20%;
+            }
+
+            p {
+                font-size: rem-calc(14);
+
+                span {
+                    font-weight: bold;
+
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+
+    #text {
+        p {
+            font-size: rem-calc(18);
+            text-align: center;
+        }
+    }
+}

@@ -8,6 +8,7 @@ import { About } from "./pages/about/About";
 import { Courses } from "./pages/courses/Courses";
 import { Cults } from "./pages/cults/Cults";
 import { Home } from "./pages/home/Home";
+import { Tithes } from "./pages/tithes/Tithes";
 
 export const App = () => {
   return (
@@ -16,7 +17,8 @@ export const App = () => {
       {/* <Home></Home> */}
       {/* <About></About> */}
       {/* <Cults></Cults> */}
-      <Courses></Courses>
+      {/* <Courses></Courses> */}
+      <Tithes></Tithes>
       <Footer></Footer>
     </>
   );
