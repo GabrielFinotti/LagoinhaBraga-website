@@ -3,44 +3,84 @@
 #about {
     background-color: $bg-primary-color;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
 
-    padding: 20px;
+        padding: 20px;
 
-    h1 {
-        color: $text-primary-color;
-        font-size: rem-calc(34);
-        font-weight: 500;
-        text-align: center;
-        letter-spacing: 3px;
+        h1 {
+            color: $text-primary-color;
+            font-size: rem-calc(34);
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: 3px;
 
-        &::after {
-            background-color: $bg-tertiary-color;
+            &::after {
+                background-color: $bg-tertiary-color;
 
-            display: block;
+                display: block;
 
-            height: 4px;
-            margin-top: 10px;
+                height: 4px;
+                margin-top: 10px;
 
-            content: "";
+                content: "";
+            }
+        }
+
+        img {
+            border-radius: 20px;
+
+            width: 55%;
+            margin-top: 20px;
+        }
+
+        p {
+            color: $text-primary-color;
+            font-size: rem-calc(18);
+            font-weight: 300;
+            text-align: justify;
         }
     }
+}
 
-    img {
-        border-radius: 20px;
+@media (min-width: 760px) {
+    #about {
+        .container {
+            h1 {
+                font-size: rem-calc(34);
+            }
 
-        width: 55%;
-        margin-top: 20px;
+            img {
+                width: 40%;
+            }
+
+            p {
+                font-size: rem-calc(22);
+            }
+        }
     }
+}
 
-    p {
-        color: $text-primary-color;
-        font-size: rem-calc(18);
-        font-weight: 300;
-        text-align: justify;
+@media (min-width: 1024px) {
+    #about {
+        .container {
+            h1 {
+                font-size: rem-calc(38);
+            }
+
+            img {
+                width: 28%;
+            }
+
+            p {
+                font-size: rem-calc(22);
+
+                max-width: 850px;
+            }
+        }
     }
 }
