@@ -83,3 +83,29 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    #tithes {
+        #headerTithes {
+            h1 {
+                font-size: rem-calc(38);
+            }
+
+            p {
+                font-size: rem-calc(20);
+            }
+        }
+
+        #payment {
+            div {
+                p {
+                    font-size: rem-calc(16);
+                }
+            }
+        }
+
+        #text {
+            font-size: rem-calc(20);
+        }
+    }
+}
