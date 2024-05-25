@@ -13,6 +13,8 @@ header {
 
         color: $text-primary-color;
 
+        max-width: 1024px;
+        margin: auto;
         padding: 20px;
 
         #logo {
@@ -73,6 +75,61 @@ header {
                 text-wrap: nowrap;
 
                 padding: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    header {
+        nav {
+            #logo {
+                width: 70px;
+            }
+
+            #navMenu {
+                display: none;
+            }
+
+            #navLinks {
+                display: flex;
+                flex-direction: row;
+
+                position: relative;
+
+                width: max-content;
+                height: max-content;
+                padding: 0;
+
+                #closeNavMenu {
+                    display: none;
+                }
+
+                a {
+                    border: 0;
+
+                    font-size: rem-calc(18);
+
+                    padding: 10px 15px;
+
+                    &:hover {
+                        border-bottom: 2px solid $bg-tertiary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        nav {
+            #navLinks {
+                a {
+                    font-size: rem-calc(20);
+
+                    padding: 10px 20px;
+                }
             }
         }
     }

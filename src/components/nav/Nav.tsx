@@ -12,6 +12,8 @@ export const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNavVisibility = () => {
+    if (window.innerWidth > 760) return;
+
     setNavOpen(!navOpen);
   };
 
