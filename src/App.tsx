@@ -7,6 +7,7 @@ import { Nav } from "./components/nav/Nav";
 import { About } from "./pages/about/About";
 import { Courses } from "./pages/courses/Courses";
 import { Cults } from "./pages/cults/Cults";
+import { Gcs } from "./pages/gcs/Gcs";
 import { Home } from "./pages/home/Home";
 import { Tithes } from "./pages/tithes/Tithes";
 
@@ -18,7 +19,8 @@ export const App = () => {
       {/* <About></About> */}
       {/* <Cults></Cults> */}
       {/* <Courses></Courses> */}
-      <Tithes></Tithes>
+      {/* <Tithes></Tithes> */}
+      <Gcs></Gcs>
       <Footer></Footer>
     </>
   );
