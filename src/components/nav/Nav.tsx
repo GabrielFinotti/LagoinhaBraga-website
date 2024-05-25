@@ -6,6 +6,7 @@ import "./Nav.scss";
 import logo from "../../assets/imgs/favicon.png";
 import navMenu from "../../assets/icons/navMenu-icon.svg";
 import closeNavMenu from "../../assets/icons/closeNavMenu-icon.svg";
+import { Link } from "react-router-dom";
 
 export const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -25,12 +26,24 @@ export const Nav = () => {
           <button id="closeNavMenu" onClick={toggleNavVisibility}>
             <img src={closeNavMenu} alt="Close" />
           </button>
-          <a href="/">Início</a>
-          <a href="/">Quem somos</a>
-          <a href="/">Cultos</a>
-          <a href="/">GC's</a>
-          <a href="/">Dízimos e Ofertas</a>
-          <a href="/">Cursos</a>
+          <Link to="/" onClick={toggleNavVisibility}>
+            Início
+          </Link>
+          <Link to="/about" onClick={toggleNavVisibility}>
+            Quem somos
+          </Link>
+          <Link to="/cults" onClick={toggleNavVisibility}>
+            Cultos
+          </Link>
+          <Link to="/gcs" onClick={toggleNavVisibility}>
+            GC's
+          </Link>
+          <Link to="/tithes" onClick={toggleNavVisibility}>
+            Dízimos e Ofertas
+          </Link>
+          <Link to="/courses" onClick={toggleNavVisibility}>
+            Cursos
+          </Link>
         </div>
       </nav>
     </header>
