@@ -5,14 +5,6 @@ footer {
 
     padding: 0 10px;
 
-    p {
-        font-size: rem-calc(16);
-        font-weight: 600;
-        text-align: center;
-
-        padding-bottom: 10px;
-    }
-
     div {
         display: flex;
         align-items: center;
@@ -35,6 +27,14 @@ footer {
             }
         }
     }
+
+    p {
+        font-size: rem-calc(16);
+        font-weight: 600;
+        text-align: center;
+
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -47,6 +47,15 @@ footer {
                     width: 15px;
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    footer {
+        div {
+            max-width: 420px;
+            margin: auto;
         }
     }
 }
