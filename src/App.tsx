@@ -6,6 +6,7 @@ import "./App.scss";
 import { Footer } from "./components/footer/Footer";
 import { Nav } from "./components/nav/Nav";
 import { Routers } from "./routes/Routers";
+import { TopGo } from "./components/topGo/TopGo";
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
       <BrowserRouter>
         <Nav></Nav>
         <Routers></Routers>
+        <TopGo></TopGo>
         <Footer></Footer>
       </BrowserRouter>
     </>
